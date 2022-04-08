@@ -72,7 +72,7 @@ jobs:
             BIN_PATH: 'pypy3'
     name: "${{ matrix.PYTHON.VERSION }} ABI ${{ matrix.PYTHON.ABI_VERSION }} macOS"
     steps:
-      - uses: actions/checkout@v2.3.4
+      - uses: actions/checkout@v3.0.0
       - name: Setup python
         run: |
           curl "$PYTHON_DOWNLOAD_URL" -o python.pkg
@@ -138,7 +138,7 @@ jobs:
             PYTHON: {VERSION: "pypy-3.7", MSVC_VERSION: "2019"}
     name: "${{ matrix.PYTHON.VERSION }} ${{ matrix.WINDOWS.WINDOWS }} ${{ matrix.PYTHON.ABI_VERSION }}"
     steps:
-      - uses: actions/checkout@v2.3.4
+      - uses: actions/checkout@v3.0.0
       - name: Setup python
         uses: actions/setup-python@v2.2.2
         with:
