@@ -122,7 +122,7 @@ pyenchant==3.2.2
     # via
     #   cryptography (pyproject.toml)
     #   sphinxcontrib-spelling
-pygments==2.19.1
+pygments==2.19.2
     # via
     #   readme-renderer
     #   sphinx
